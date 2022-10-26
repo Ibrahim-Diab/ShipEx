@@ -125,19 +125,21 @@ extension HomeVc:UITableViewDelegate,UITableViewDataSource
         }
         else if section == 1
         {
-            label.text = "Watches"
+            label.text = "Perfume"
             tableViewSection = 2
             
             
             
         }
-        else
+        else if section == 2
         {
-            label.text = "Perfums"
+            label.text = "Devices"
             tableViewSection = 3
             
             
         }
+
+       
         
         return headerView
     }

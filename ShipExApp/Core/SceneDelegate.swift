@@ -14,11 +14,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
         guard let windowsSene = (scene as? UIWindowScene) else { return }
-        window = UIWindow()
-        window?.windowScene = windowsSene
-        
         let navController = UINavigationController()
         navController.isNavigationBarHidden = true
+        window = UIWindow()
+        window?.windowScene = windowsSene
         window?.rootViewController = navController
         let user = Auth.auth().currentUser
         if user != nil
@@ -34,9 +33,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let homeVc  = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Loging") as! LoginAndSignUpVc
             navController.setViewControllers([homeVc], animated: true)
         }
-        
+
     }
-    
+  
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

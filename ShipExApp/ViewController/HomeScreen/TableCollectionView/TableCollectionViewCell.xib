@@ -29,7 +29,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.72549019609999998" green="0.93333333330000001" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="7rj-zY-b0G" secondAttribute="bottom" id="LUc-AF-opQ"/>
                             <constraint firstItem="xWD-ZF-sh7" firstAttribute="top" secondItem="Ao3-dE-DCa" secondAttribute="top" id="Lcv-nh-ueg"/>
@@ -51,6 +50,7 @@
             </constraints>
             <size key="customSize" width="207" height="254"/>
             <connections>
+                <outlet property="imageViewProduct" destination="xWD-ZF-sh7" id="syP-in-Bxo"/>
                 <outlet property="porductPrice" destination="7rj-zY-b0G" id="DOk-Nx-RPF"/>
             </connections>
             <point key="canvasLocation" x="-338" y="88"/>

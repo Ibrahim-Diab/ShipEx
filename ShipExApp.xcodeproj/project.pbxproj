@@ -19,6 +19,7 @@
 		1B4E8BE329058D540052EDB9 /* profileVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4E8BE229058D540052EDB9 /* profileVc.swift */; };
 		1B701201290785FB0085E1CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B701200290785FB0085E1CA /* Assets.xcassets */; };
 		1B78B88229053FEA00A6C8F3 /* FirebaseCongfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B78B88129053FEA00A6C8F3 /* FirebaseCongfig.swift */; };
+		1B8DC7622908B8BE0078A6ED /* Animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B8DC7612908B8BE0078A6ED /* Animation.json */; };
 		1BB3310B28F44ACF00CE0D19 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3310A28F44ACF00CE0D19 /* Extension.swift */; };
 		1BBD20A028F44057001FF155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBD209F28F44057001FF155 /* AppDelegate.swift */; };
 		1BBD20A228F44057001FF155 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBD20A128F44057001FF155 /* SceneDelegate.swift */; };
@@ -42,6 +43,7 @@
 		1B4E8BE229058D540052EDB9 /* profileVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileVc.swift; sourceTree = "<group>"; };
 		1B701200290785FB0085E1CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B78B88129053FEA00A6C8F3 /* FirebaseCongfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCongfig.swift; sourceTree = "<group>"; };
+		1B8DC7612908B8BE0078A6ED /* Animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Animation.json; sourceTree = "<group>"; };
 		1BB3310A28F44ACF00CE0D19 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		1BBD209C28F44057001FF155 /* ShipExApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShipExApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BBD209F28F44057001FF155 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		1B32C65C28F4DFB300DCDE5A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1B8DC7612908B8BE0078A6ED /* Animation.json */,
 				1BE33700290534E9001018D2 /* GoogleService-Info.plist */,
 				1BBD20AA28F44058001FF155 /* LaunchScreen.storyboard */,
 				1B701200290785FB0085E1CA /* Assets.xcassets */,
@@ -260,6 +263,7 @@
 				1BBD20A728F44057001FF155 /* Main.storyboard in Resources */,
 				1B701201290785FB0085E1CA /* Assets.xcassets in Resources */,
 				1B32C67428F4F07300DCDE5A /* SliderCollectionViewCell.xib in Resources */,
+				1B8DC7622908B8BE0078A6ED /* Animation.json in Resources */,
 				1BE33701290534E9001018D2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

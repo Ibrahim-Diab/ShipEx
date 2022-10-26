@@ -23,19 +23,15 @@ class TabbarController: UITabBarController {
        
        let profileVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "profile") as! profileVc
       
-      //  let profileVc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeVc") as! HomeVc
-//        let favouriteVC = HomeController(nibName: "HomeController", bundle: nil)
-        
+  
         // Tabbar
         let profiletab = UITabBarItem(title: "profile", image: UIImage(named: "Icon-1"), tag: 1)
-//        let lovedtab = UITabBarItem(title: "المفضلة", image: UIImage(named: "love"), tag: 1)
-//        let buyingtab  = UITabBarItem(title: "السلة", image: UIImage(named: "cart"), tag: 2)
+//
        let hometab = UITabBarItem(title: "Home", image: UIImage(named: "Home"), tag: 0)
 //
         // tabbarControl
         profileVC.tabBarItem = profiletab
-//        favouriteVC.tabBarItem = lovedtab
-//        shopingVC.tabBarItem = buyingtab
+
         homeController.tabBarItem = hometab
         
         //

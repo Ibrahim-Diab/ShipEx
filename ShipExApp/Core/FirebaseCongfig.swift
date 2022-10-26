@@ -9,14 +9,9 @@ import Foundation
 import FirebaseAuth
 import FirebaseCore
 import FirebaseDatabase
-class FirebaseConfig
-{
+class FirebaseConfig{
     static let sahredInstance = FirebaseConfig()
     
-    
-    
-    
-  
     func signUp(email:String,password:String,username:String,mobile:String,gender:String)
     {
         
@@ -28,8 +23,6 @@ class FirebaseConfig
             let userid = UserData!.user.uid
             let email = UserData?.user.email
             self.saveDatainFierbase(username:username , mobile: mobile, gender: gender, userId: userid,email:email!)
-            
-            
             
         }
         
@@ -47,28 +40,28 @@ class FirebaseConfig
             
             self.fetchDataFromFirebase(userId: UserData!.user.uid)
             
-          
+            
             
         }
     }
     
     func fetchDataFromFirebase(userId:String)
-        {
-          
-            Database.database().reference().child("Users").child(userId).observe(.value, with: { snapshots in
-              let snapshot = snapshots.value as? NSDictionary
-                
-                
-                UserDefaults.standard.set(snapshot?["username"] as? String, forKey: "username")
-                UserDefaults.standard.set( snapshot?["email"] as? String, forKey: "email")
-                UserDefaults.standard.set(snapshot?["gender"] as? String, forKey: "gender")
-                UserDefaults.standard.set(snapshot?["mobile"] as? String, forKey: "mobile")
-               
-            })
-
-        }
+    {
         
+        Database.database().reference().child("Users").child(userId).observe(.value, with: { snapshots in
+            let snapshot = snapshots.value as? NSDictionary
+            
+            
+            UserDefaults.standard.set(snapshot?["username"] as? String, forKey: "username")
+            UserDefaults.standard.set( snapshot?["email"] as? String, forKey: "email")
+            UserDefaults.standard.set(snapshot?["gender"] as? String, forKey: "gender")
+            UserDefaults.standard.set(snapshot?["mobile"] as? String, forKey: "mobile")
+            
+        })
         
+    }
+    
+    
     
     
     func saveDatainFierbase(username:String,mobile:String,gender:String,userId:String,email:String)

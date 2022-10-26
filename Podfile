@@ -12,5 +12,5 @@ pod ‘FirebaseAuth’
 pod 'FirebaseDatabase'
 pod ‘Kingfisher’
 pod 'FirebaseStorage'
-
+pod 'lottie-ios'
 end

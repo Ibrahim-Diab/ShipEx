@@ -9,6 +9,7 @@ import UIKit
 
 class TableCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var imageViewProduct: UIImageView!
     @IBOutlet weak var porductPrice: UILabel!
     
     override func awakeFromNib() {
